@@ -1,5 +1,8 @@
 wp-admin
 
+
+wp-content/debug.log
+
 wp-content/plugins/akismet
 wp-content/plugins/elementor
 wp-content/plugins/hello.php

@@ -14,12 +14,14 @@
 
 function register_hello_world_widget( $widgets_manager ) {
 
+	require_once( __DIR__ . '/widgets/hello-world-widget-1.php' );
+	require_once( __DIR__ . '/widgets/hello-world-widget-2.php' );
 
 	require_once( __DIR__ . '/widgets/widget.php' );
 	$widgets = [
 					[
 						'title' => 'WIdget 1',
-						'id' => 'test_widget1',
+						'id' => 'test_widget_1',
 						'icon' => 'eicon-code',
 						'categories' => ['basic'],
 						'fields' => [
@@ -39,7 +41,7 @@ function register_hello_world_widget( $widgets_manager ) {
 					],
 					[
 						'title' => 'WIdget 2',
-						'id' => 'test_widget2',
+						'id' => 'test_widget_2',
 						'icon' => 'eicon-code',
 						'categories' => ['basic'],
 						'fields' => [
@@ -59,12 +61,11 @@ function register_hello_world_widget( $widgets_manager ) {
 					]
 				];
 	foreach ($widgets as $widget) {
-		$widgetObj = new My_Widget($widget);
-		$widgetObj->config = $widget;
-		$widgets_manager->register($widgetObj);
+		$widgets_manager->register(new \My_Widget($widget));
 	}
-
 	
+	$widgets_manager->register( new \Elementor_Hello_World_Widget_1() );
+	$widgets_manager->register( new \Elementor_Hello_World_Widget_2() );
 
 }
 add_action( 'elementor/widgets/register', 'register_hello_world_widget' );
