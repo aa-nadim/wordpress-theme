@@ -3,14 +3,7 @@ wp-admin
 
 wp-content/debug.log
 
-wp-content/plugins/akismet
-wp-content/plugins/elementor
-wp-content/plugins/hello.php
 
-wp-content/themes/politixy
-wp-content/themes/citykid
-wp-content/themes/nextpro
-wp-content/themes/architronix
 
 wp-content/uploads
 wp-content/upgrade
