@@ -34,6 +34,7 @@ get_header();
           )
         )
       ));
+      
       while ($homepageEvents->have_posts()) {
         $homepageEvents->the_post(); ?>
         <div class="event-summary">
