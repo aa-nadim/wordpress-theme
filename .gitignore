@@ -1,9 +1,13 @@
-html
+node_modules
 wp-admin
 
 wp-content/debug.log
 
+wp-content/themes/twentytwentyone
+wp-content/themes/fictional-university-theme/node_modules
+wp-content/themes/fictional-university-theme/build
 
+wp-content/themes/fictional-university-theme/package-lock.json
 
 wp-content/uploads
 wp-content/upgrade
@@ -17,7 +21,7 @@ wp-activate.php
 wp-blog-header.php
 wp-comments-post.php
 wp-config-sample.php
-wp-config.php
+
 wp-cron.php
 wp-links-opml.php
 wp-load.php
